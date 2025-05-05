@@ -3,6 +3,10 @@
 // If the "ci" tag is passed to go (go run -tags ci myapp.go) it will run an in-memory application.
 package app // import "fyne.io/fyne/v2/app"
 
+
+
+
+
 import (
 	"strconv"
 	"time"
@@ -17,6 +21,9 @@ import (
 
 // Declare conformity with App interface
 var _ fyne.App = (*fyneApp)(nil)
+
+
+
 
 type fyneApp struct {
 	driver    fyne.Driver
@@ -45,6 +52,10 @@ func (a *fyneApp) Icon() fyne.Resource {
 	}
 	return a.Metadata().Icon
 }
+
+
+
+
 
 func (a *fyneApp) SetIcon(icon fyne.Resource) {
 	a.icon = icon
